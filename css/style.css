@@ -21,6 +21,11 @@ h1 {
     min-height: 50px;
     width: 90%;
     margin: auto;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: white;
 
 }
 
@@ -114,5 +119,5 @@ label{
     font-size: 26px;
     margin-bottom: 30px;
     font-weight: 500;
-    color: grey;
+    color: white;
 }

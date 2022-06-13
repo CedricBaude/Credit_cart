@@ -24,7 +24,7 @@ num_card.addEventListener('input', (e) => {
         num_card.value.length === 13 || num_card.value.length === 14 || num_card.value.length === 15 || num_card.value.length === 16 ||
         num_card.value.length === 17 || num_card.value.length === 18 || num_card.value.length === 19 || num_card.value.length === 20 
         ){
-        contenu.textContent =` ${value}`;
+        contenu.innerHTML =` ${value}`;
         }
 });
 
