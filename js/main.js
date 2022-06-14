@@ -1,13 +1,13 @@
 
-const num_card = document.querySelector("#num_card");
-const name_card = document.querySelector("#name_card");
-const expi_date = document.querySelector("#expi_date");
-const contenu = document.querySelector("#contenu");
-const form = document.querySelector("#form");
-const carte= document.querySelector("#carte");
-const small_containt2 = document.querySelector("#small_containt2");
-const crypto = document.querySelector("#crypto");
-
+const num_card = document.getElementById("num_card");
+const name_card = document.getElementById("name_card");
+const expi_date = document.getElementById("expi_date");
+const contenu = document.getElementById("contenu");
+const form = document.getElementById("form");
+const card_inner = document.getElementById("card_inner");
+const small_containt2 = document.getElementById("small_containt2");
+const crypto = document.getElementById("crypto");
+const flip = document.getElementById('flip');
 
 /* form.addEventListener("submit", function(event){
     event.preventDefault();
@@ -15,16 +15,17 @@ const crypto = document.querySelector("#crypto");
     h1.textContent +=` ${value}`;
     console.log(event);
 }) */
-/*crypto.onfocus = function(){
-    carte.style.transform = "rotateY(180deg)";
+crypto.onfocus = function(){
+    flip.style.transform = "rotateY(180deg)";
 }
 
 crypto.onblur = function(){
-    carte.style.transform = "rotateY(0deg)"
+    flip.style.transform = "rotateY(0deg)";
 }
-cryptos.onfocus = function(){
-    contenu4.style.transform = "rotateY(180deg)";
-}*/
+
+
+
+
 num_card.addEventListener('input', (e) => {
     
     const value = num_card.value;
@@ -45,7 +46,7 @@ name_card.addEventListener('input', (e) => {
     
     const value = name_card.value;
     if (name_card.value.length === 0){
-    contenu2.innerHTML ='<p>FULL NAME</p>';
+    contenu2.innerHTML ='FULL NAME';
     }
     if (name_card.value.length === 1 || name_card.value.length === 2 || name_card.value.length === 3 || name_card.value.length === 4 ||
         name_card.value.length === 5 || name_card.value.length === 6 || name_card.value.length === 7 || name_card.value.length === 8 ||
@@ -62,6 +63,17 @@ expi_date.addEventListener('input', (e) => {
     
     const value = expi_date.value;
     contenu3.textContent =` ${value}`;
+    if (expi_date.value.length === 0){
+        contenu3.innerHTML ='MM/YY';
+        }
+        if (expi_date.value.length === 1 || expi_date.value.length === 2 || expi_date.value.length === 3 || expi_date.value.length === 4 ||
+            expi_date.value.length === 5  
+            ){
+            contenu3.innerHTML =`${value}`;
+            }
+    
+
+    
     
 });
 

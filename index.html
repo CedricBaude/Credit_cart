@@ -16,37 +16,77 @@
     </header>
 
     
-    <div class="container">
+    <div class="container_modif">
         <h1>Paiement par carte de crédit</h1>
         <p class="grey">Frais de transaction <span class="green">0.00€</span></p>
         <div class="container_card">
-            <div id="carte">
-                <div id="puce">
-                    <div id="puce_2"> 
+            <div class="card_inner" id="flip">
+                <div class="card-front">
+                    <div id="puce">
+                        <div id="puce_2"> 
 
+                        </div>
                     </div>
-                </div>
-                <div id="contenu">
-                    &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;
-                </div>
-                <div class="inter_containt">
-                    <div id="contenu2">
-                        FULL NAME
+                    <div id="contenu">
+                        &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;
                     </div>
-                    <div id="contenu3">
-                        MM/YY
+                    <div class="inter_containt">
+                        <div id="contenu2">
+                            FULL NAME
+                        </div>
+                        <div id="contenu3">
+                            MM/YY
+                        </div>
+                        
                     </div>
+                   
                     
                 </div>
-                <div id="contenu4">
-                        
+
+                <div class="card-back">
+                    <div class="contenu_back">
+
+                    </div>
+                    <div class="contenu_back2">
+                        <div class="blanc">
+
+                        </div>
+                        <div id="contenu4">
+                            
+                        </div>
+                    </div>
+                    <div class="contenu_back3">
+                    <div id="puce_back">
+                        <div id="puce_2_back"> 
+
+                        </div>
+                    </div>
+                    <div class="credits">
+                        <p>This card has been used by Jesse Poliak ans is licensed for anyone to use anywhere for free. It comes with no warranty. For support issues
+                            please visited: github.com/JessePoliak/card.
+                        </p>
+                    </div>
+                    </div>
+                    
+
+
                 </div>
-                <p>🔒 Paiement sécurisé par by HiPay SAS, 256-bit SSL</p>
+                
             </div>
+            
+
+
+
+
+
+
+            
+
+
 
             <form action="#" classe="" id="form">
                 <label for="" class="label_center">Numéro de la carte</label>
-                <input class="form-control" type="text" id="num_card" >
+                <input class="form-control" type="text" id="num_card" pattern="([0-9]{16})" >
 
                 <label for="" class="label_center">Titulaire de la carte</label>
                 <input class="form-control" type="text" id="name_card">
@@ -54,11 +94,11 @@
                 <div class="verif">
                     <div class="small_containt">
                         <label for="" class="label_center">Date d'expiration</label>
-                        <input class="form-control small_input" type="text" id="expi_date">
+                        <input class="form-control small_input" type="text" id="expi_date" maxlength="5">
                     </div>
                     <div id="small_containt2">
                         <label for="" class="label_center">Cryptogramme</label>
-                        <input class="form-control small_input" type="text" id="crypto">
+                        <input class="form-control small_input" type="text" id="crypto" maxlength="3">
                     </div>
                 </div>   
 
@@ -66,14 +106,14 @@
             </form>
 
         </div>
-        
+        <p class="payment">🔒 Paiement sécurisé par by HiPay SAS, 256-bit SSL</p>
     </div>
 
 
 
 
     <footer>
-
+        
     </footer>
     
 </body>
