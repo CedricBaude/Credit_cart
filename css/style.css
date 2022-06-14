@@ -10,9 +10,9 @@ h1 {
     margin-top: 20px;
     color: rgb(255, 102, 0);
 }
-.carte{
+#carte{
     width: 50%;
-    background-color: darkgrey;
+    background-color: lightgrey;
     border-radius: 10pt;
     height: 300px;
 }
@@ -56,7 +56,8 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-content: center; 
+    align-content: center;
+    margin-top: 20px; 
 }
 
 
@@ -69,6 +70,7 @@ h1 {
 
 
 }
+
 
 .verif{
     display: flex;
@@ -83,6 +85,11 @@ h1 {
     width: 50%;
 }
 .small_containt{
+    width: 100%;
+    margin: 0px 2px;
+}
+
+#small_containt2{
     width: 100%;
     margin: 0px 2px;
 }
@@ -114,10 +121,73 @@ label{
 .form-control{
     margin-bottom: 20px;
 }
-.container p{
+#contenu{
     text-align: center;
-    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    color: white;
+    font-size: 32px;
+}
+
+#contenu2{
+
     margin-bottom: 30px;
     font-weight: 500;
     color: white;
+    font-size: 30px;
+    width: 75%;
+    padding-left: 50px;
+}
+
+#contenu3{
+
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    width: 25%;
+}
+
+#contenu4{
+
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: 25%;
+}
+
+.inter_containt{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.grey {
+    color: darkgrey;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.green {
+    color: green;
+}
+
+#puce{
+    height: 60px;
+    width: 90px;
+    background-color: #adadad;
+    border-radius: 8pt;
+    padding: 10px 0px;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+#puce_2{
+    height: 40px;
+    width: 65px;
+    background-color: lightgrey;
+    border-radius: 0 8pt 8pt 0;
 }
