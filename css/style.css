@@ -5,21 +5,45 @@ body {
     color: black;
 }
   
-h1 {
+.titre {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     color: rgb(255, 102, 0);
+    font-size: 44px;
 }
+
+/* ---------------------- CONTENU GAUCHE --------------------*/
+
+.container_modif{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 1140px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.container_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center; 
+    perspective: 1000px;
+}
+
 .card_inner{
     width: 50%;
     background-color: lightgrey;
     border-radius: 10pt;
     height: 300px;
     position:relative;
-
     transition: transform 0.6s;
     transform-style: preserve-3d;
-  
+}
+
+.card_inner:hover {
+    transform: rotateY(180deg);
 }
 
 #contenu{
@@ -45,6 +69,7 @@ h1 {
     width: 90%;
     margin: auto;
 }
+
 .contenu_back{
     min-height: 60px;
     width: 100%;
@@ -74,6 +99,10 @@ h1 {
     width: 80%;
     background-color: white;
 }
+
+/* ---------------------- CONTENU DROITE --------------------*/
+
+
 #form{
     margin: 0 40px 0 40px;
     width: 50%;
@@ -84,42 +113,12 @@ h1 {
 
 }
 
-
-.container_modif{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-     
-    width: 1140px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-
-
-.container_card{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center; 
-    perspective: 1000px;
-
-
-}
-
-.card_inner:hover {
-    transform: rotateY(180deg);
-  }
-
-
 .verif{
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-content: center; 
     width: 100%;
-
 }
 
 .small_input{
@@ -138,7 +137,7 @@ h1 {
 .bouton{
     background-color: rgb(255, 102, 0);
     border: none;
-    line-height: 50px;
+    line-height: 56px;
     border-radius: 7pt;
     color: white;
     font-weight: bold;
@@ -162,6 +161,7 @@ label{
 .form-control{
     margin-bottom: 20px;
 }
+
 #contenu{
     text-align: center;
     margin-top: 20px;
@@ -262,6 +262,16 @@ label{
 
 }
 
+.payment{
+    margin-left: 3%;
+    margin-top: -30px;
+    font-weight: 500;
+    color: #979797;
+    font-size: 20px;
+  }
+
+/* ----------- CARD FRONT / BACK ----------- */
+
 .card-front, .card-back {
     position:absolute;
     height:100%;
@@ -271,17 +281,10 @@ label{
 
     border-radius: 10pt;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
+}
 
   .card-back {
     transform: rotateY(180deg);
 
-  }
+}
 
-  .payment{
-    margin-left: 3%;
-    margin-top: -30px;
-    font-weight: 500;
-    color: #979797;
-    font-size: 20px;
-  }
