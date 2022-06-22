@@ -9,6 +9,11 @@ const small_containt2 = document.getElementById("small_containt2");
 const crypto = document.getElementById("crypto");
 const flip = document.getElementById('flip');
 
+/*let adrien = document.querySelector("#num_card");
+console.log(adrien);
+
+adrien.maxLength = 16;*/
+
 /* form.addEventListener("submit", function(event){
     event.preventDefault();
     const value = input.value;
@@ -32,6 +37,7 @@ num_card.addEventListener('input', (e) => {
     if (num_card.value.length === 0){
     contenu.innerHTML ='<p>&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;</p>';
     }
+    
     if (num_card.value.length === 1 || num_card.value.length === 2 || num_card.value.length === 3 || num_card.value.length === 4 ||
         num_card.value.length === 5 || num_card.value.length === 6 || num_card.value.length === 7 || num_card.value.length === 8 ||
         num_card.value.length === 9 || num_card.value.length === 10 || num_card.value.length === 11 || num_card.value.length === 12 ||
